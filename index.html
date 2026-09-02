@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HK Insight</title>
-<meta name="description" content="HK Insight is an independent advisory practice working with companies, owners and investors on corporate finance, M&A, investment strategy and sustainability.">
+<meta name="description" content="HK Insight is an independent advisory firm working with companies, owners and investors on finance, M&A, investment strategy, corporate strategy and sustainability.">
 <meta property="og:title" content="HK Insight">
-<meta property="og:description" content="Independent advisory at the intersection of finance and sustainability.">
+<meta property="og:description" content="Independent advisory in finance, M&A, strategy and sustainability.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.hkinsight.dk">
 <meta property="og:image" content="https://www.hkinsight.dk/logo.png">
@@ -110,7 +110,7 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:14px 28px;
+    padding:10px 28px;
     max-width:var(--max);
     margin:0 auto;
   }
@@ -119,27 +119,15 @@
     line-height:0;
   }
   .wordmark img{
-    height:32px;
+    height:46px;
     width:auto;
     display:block;
   }
-  .header-cta{
-    font-family:"IBM Plex Mono", monospace;
-    font-size:12.5px;
-    letter-spacing:.04em;
-    text-decoration:none;
-    padding:9px 16px;
-    border:1px solid #14181a;
-    color:#14181a;
-    border-radius:2px;
-    white-space:nowrap;
-  }
-  .header-cta:hover{ background:#14181a; color:#f5f6f2; }
 
   /* hero */
   .hero{
     position:relative;
-    padding:88px 0 76px;
+    padding:52px 0 44px;
     overflow:hidden;
   }
   .hero-figure{
@@ -148,91 +136,64 @@
     z-index:0;
     opacity:.55;
   }
-  :root[data-theme="dark"] .hero-figure, @media (prefers-color-scheme:dark){ }
   .hero-figure svg{ width:100%; height:100%; display:block; }
   .hero-content{ position:relative; z-index:1; max-width:680px; }
-  .hero .eyebrow{ display:block; margin-bottom:22px; }
+  .hero .eyebrow{ display:block; margin-bottom:16px; }
   .hero h1{
-    font-size:clamp(32px, 5vw, 46px);
+    font-size:clamp(30px, 4.6vw, 44px);
     line-height:1.14;
     letter-spacing:-.01em;
   }
   .hero-sub{
-    margin-top:22px;
+    margin-top:14px;
     max-width:56ch;
     font-size:18px;
     color:var(--ink-soft);
   }
-  .hero-actions{
-    margin-top:36px;
-    display:flex;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-  }
-  .cta{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:var(--moss-strong);
-    color:#f5f6f2;
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:2px;
-    font-size:15px;
-    font-weight:500;
-  }
-  :root[data-theme="dark"] .cta, @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .cta{ color:#121513; } }
-  .cta:hover{ background:var(--ink); }
-  :root[data-theme="dark"] .cta:hover, @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .cta:hover{ background:var(--moss); } }
-  .hero-meta{
-    font-family:"IBM Plex Mono", monospace;
-    font-size:13px;
-    color:var(--muted);
-  }
 
   /* sections */
-  section{ padding:64px 0; border-top:1px solid var(--rule); }
+  section{ padding:40px 0; border-top:1px solid var(--rule); }
   .section-head{
     display:grid;
     grid-template-columns:200px 1fr;
-    gap:40px;
-    margin-bottom:36px;
+    gap:28px;
+    margin-bottom:22px;
   }
-  .section-head h2{ font-size:26px; }
+  .section-head h2{ font-size:25px; }
   .section-head .eyebrow{ padding-top:5px; }
 
   /* about */
   .about-content{
     display:grid;
-    grid-template-columns:220px 1fr;
-    gap:48px;
+    grid-template-columns:104px 1fr;
+    gap:24px;
     align-items:start;
   }
-  .about-photo{ margin:0; }
+  .about-photo{ margin:0; width:104px; }
   .about-photo img{
-    width:100%;
-    aspect-ratio:4/5;
+    width:104px;
+    height:104px;
     object-fit:cover;
     object-position:center 22%;
     display:block;
     border:1px solid var(--rule);
+    border-radius:2px;
   }
   .about-photo figcaption{
-    margin-top:10px;
+    margin-top:8px;
     font-family:"IBM Plex Mono", monospace;
-    font-size:11px;
+    font-size:10.5px;
     letter-spacing:.08em;
     text-transform:uppercase;
     color:var(--muted);
   }
   .about-body{ max-width:640px; }
-  .about-body p + p{ margin-top:18px; }
+  .about-body p + p{ margin-top:12px; }
   .pedigree{
-    margin-top:32px;
+    margin-top:18px;
     display:flex;
     flex-wrap:wrap;
-    gap:10px 28px;
+    gap:8px 24px;
     font-family:"IBM Plex Mono", monospace;
     font-size:13px;
     color:var(--ink-soft);
@@ -250,49 +211,42 @@
   }
   .service{
     background:var(--paper);
-    padding:28px 30px;
+    padding:18px 22px;
   }
-  .service h3{ font-size:18px; margin-bottom:10px; }
+  .service h3{ font-size:18px; margin-bottom:6px; }
   .service p{ color:var(--ink-soft); font-size:15px; }
 
-  /* engagement */
-  .engagement blockquote{
-    margin:0;
-    max-width:620px;
-    font-family:"Newsreader", serif;
-    font-style:italic;
-    font-size:23px;
-    line-height:1.5;
-    color:var(--ink);
-  }
-  .engagement footer{
-    all:unset;
-    display:block;
-    margin-top:20px;
-    font-family:"IBM Plex Mono", monospace;
-    font-size:13px;
+  /* engagement — plain paragraphs, same rhythm as About */
+  .engagement-body{ max-width:640px; color:var(--ink-soft); }
+  .engagement-body p + p{ margin-top:12px; }
+  .engagement-body .note{
     color:var(--muted);
+    font-size:14.5px;
   }
+
+  /* me */
+  .me-body{ max-width:640px; color:var(--ink-soft); }
+  .me-body p + p{ margin-top:12px; }
 
   /* contact */
   .contact-inner{
     display:grid;
     grid-template-columns:200px 1fr;
-    gap:40px;
+    gap:28px;
     align-items:start;
   }
   .contact-card{
     background:var(--paper-raised);
     border:1px solid var(--rule);
     border-radius:3px;
-    padding:34px;
+    padding:22px;
     max-width:520px;
   }
-  .contact-card h2{ font-size:24px; margin-bottom:14px; }
+  .contact-card h2{ font-size:24px; margin-bottom:10px; }
   .contact-card p{ color:var(--ink-soft); font-size:15.5px; max-width:44ch; }
   .contact-email{
     display:inline-block;
-    margin-top:22px;
+    margin-top:14px;
     font-family:"IBM Plex Mono", monospace;
     font-size:16px;
     color:var(--moss-strong);
@@ -302,14 +256,14 @@
   }
   .contact-email:hover{ color:var(--ink); }
   .contact-loc{
-    margin-top:18px;
+    margin-top:12px;
     font-size:14px;
     color:var(--muted);
   }
 
   footer.site-footer{
     border-top:1px solid var(--rule);
-    padding:26px 0 40px;
+    padding:16px 0 24px;
   }
   .footer-inner{
     display:flex;
@@ -325,18 +279,16 @@
   @media (max-width: 720px){
     body{ font-size:16px; }
     .wrap{ padding:0 20px; }
-    .header-inner{ padding:14px 20px; }
-    .hero{ padding:56px 0 48px; }
+    .header-inner{ padding:8px 20px; }
+    .hero{ padding:34px 0 30px; }
     .hero-sub{ font-size:16.5px; }
-    .wordmark img{ height:26px; }
-    section{ padding:48px 0; }
-    .section-head{ grid-template-columns:1fr; gap:10px; }
-    .about-content{ grid-template-columns:1fr; gap:24px; }
-    .about-photo{ max-width:190px; }
+    .wordmark img{ height:36px; }
+    section{ padding:28px 0; }
+    .section-head{ grid-template-columns:1fr; gap:8px; margin-bottom:16px; }
+    .about-content{ grid-template-columns:1fr; gap:14px; }
     .services-grid{ grid-template-columns:1fr; }
-    .contact-inner{ grid-template-columns:1fr; gap:18px; }
-    .contact-card{ padding:26px; max-width:none; }
-    .engagement blockquote{ font-size:20px; }
+    .contact-inner{ grid-template-columns:1fr; gap:14px; }
+    .contact-card{ padding:18px; max-width:none; }
   }
 </style>
 </head>
@@ -354,8 +306,8 @@
 
   Each section below is marked with a comment like the one you're
   reading now (look for lines starting "SECTION:"), so you can find
-  the right block quickly. After editing, save the file and re-upload
-  it to one.com to publish the change.
+  the right block quickly. After editing, save the file and commit it
+  in GitHub to publish the change.
   ============================================================
 -->
 
@@ -364,7 +316,6 @@
     <a class="wordmark" href="#top">
       <img src="logo.png" alt="HK Insight" width="900" height="677">
     </a>
-    <a class="header-cta" href="mailto:martin@hkinsight.dk">Email Martin</a>
   </div>
 </header>
 
@@ -383,13 +334,9 @@
       </svg>
     </div>
     <div class="wrap hero-content">
-      <span class="eyebrow">Corporate Finance — M&amp;A — Investment Strategy — Sustainability</span>
-      <h1>Independent advisory where financial rigour meets sustainability.</h1>
-      <p class="hero-sub">HK Insight works with companies, owners and investors on corporate finance, M&amp;A, investment strategy and sustainability — drawing on more than 25 years across private equity, investment banking, management consulting and corporate strategy.</p>
-      <div class="hero-actions">
-        <a class="cta" href="mailto:martin@hkinsight.dk">Get in touch →</a>
-        <span class="hero-meta">martin@hkinsight.dk</span>
-      </div>
+      <span class="eyebrow">Finance — M&amp;A — Investment Strategy — Corporate Strategy — Sustainability — Sustainable Finance</span>
+      <h1>Independent advisory in finance, M&amp;A, strategy and sustainability.</h1>
+      <p class="hero-sub">HK Insight is an independent advisory firm where I work with companies, owners and investors on finance, M&amp;A, investment strategy, corporate strategy and sustainability — drawing on more than 25 years across private equity, investment banking, management consulting and corporate strategy.</p>
     </div>
   </section>
 
@@ -402,20 +349,21 @@
       </div>
       <div class="about-content">
         <figure class="about-photo">
-          <img src="martin.jpg" alt="Martin Bang-Löwgren, Founder &amp; Advisor at HK Insight" width="900" height="1349">
+          <img src="martin.jpg" alt="Martin Bang-Löwgren, Founder &amp; Advisor at HK Insight" width="104" height="104">
           <figcaption>Founder &amp; Advisor</figcaption>
         </figure>
         <div>
           <div class="about-body">
-            <p><strong>Martin Bang-Löwgren</strong> is the founder of HK Insight, based in Copenhagen. He advises clients on corporate finance, M&amp;A, investment strategy, business strategy and sustainable finance, drawing on more than 25 years across private equity, investment banking, management consulting and corporate strategy.</p>
-            <p>Most recently, he spent 11 years as an investment professional at Polaris, a Copenhagen-based private equity firm, before becoming its first Head of Sustainability from 2020 to 2025 — building the firm's approach to ESG integration, climate strategy and EU regulatory readiness across SFDR, CSRD, the EU Taxonomy and CSDDD.</p>
-            <p>Engagements draw on this combination of investment experience and sustainability expertise to support clients across the full deal and strategy lifecycle.</p>
+            <p><strong>My name is Martin Bang-Löwgren</strong> and I am the founder of HK Insight, based in Copenhagen. I advise clients on finance, M&amp;A, investment strategy, corporate strategy and sustainability / sustainable finance, drawing on more than 25 years across private equity, investment banking, management consulting and corporate strategy.</p>
+            <p>Most recently, I spent 16 years as a Director at Polaris, a Copenhagen-based private equity firm, and served as its first Head of Sustainability from 2020 to 2025 — building the firm's approach to ESG integration, climate strategy and EU regulatory readiness across SFDR, CSRD, the EU Taxonomy and CSDDD.</p>
+            <p>Before my time in private equity, I gained relevant experience from roles in corporates, management consulting and corporate finance.</p>
+            <p>All my engagements draw on this combination of investment, strategy and corporate experience and sustainability expertise to support clients across a broad range of topics.</p>
           </div>
           <div class="pedigree">
             <span><b>Polaris</b> · Private Equity, 2009–2025</span>
-            <span><b>J.P. Morgan</b> · Investment Banking</span>
-            <span><b>BCG</b> · Management Consulting</span>
             <span><b>Coloplast</b> &amp; <b>Gambro</b> · Corporate Strategy</span>
+            <span><b>BCG</b> · Management Consulting</span>
+            <span><b>J.P. Morgan</b> · Investment Banking</span>
           </div>
         </div>
       </div>
@@ -432,39 +380,40 @@
       <div class="services-grid">
         <div class="service">
           <h3>Corporate finance</h3>
-          <p>Valuation, capital structure, financing strategy, debt and capital markets.</p>
+          <p>Valuation, capital structure, financing strategy, debt and capital markets (IPO, high-yield).</p>
         </div>
         <div class="service">
           <h3>M&amp;A</h3>
-          <p>Buy-side and sell-side support, deal structuring, negotiation, post-deal integration.</p>
+          <p>Buy-side and sell-side support, due diligence, exit preparation, deal structuring, negotiation, post-deal integration.</p>
         </div>
         <div class="service">
           <h3>Investment strategy</h3>
-          <p>Deal evaluation, due diligence support, value creation planning, portfolio assessment.</p>
+          <p>Succession planning, deal evaluation, due diligence, value creation planning, portfolio assessment and related questions for investment firms and family offices.</p>
         </div>
         <div class="service">
-          <h3>Strategy</h3>
-          <p>Business plan development, growth strategy, performance improvement.</p>
+          <h3>Corporate strategy</h3>
+          <p>Strategy, business plan development, planning, follow-up and execution.</p>
         </div>
         <div class="service" style="grid-column:1 / -1;">
           <h3>Sustainability &amp; sustainable finance</h3>
-          <p>Integration into investment processes and corporate decision-making, EU regulatory readiness (SFDR, CSRD, EU Taxonomy, CSDDD), climate strategy (TCFD, SBTi).</p>
+          <p>Integration into investment processes and corporate decision-making, EU regulatory readiness (SFDR, CSRD, EU Taxonomy, CSDDD), climate strategy (TCFD, SBTi). Expertise in UN Guiding Principles / OECD Guidelines and due diligence.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION: ENGAGEMENT MODEL (the pull-quote) -->
+  <!-- SECTION: ENGAGEMENT MODEL -->
   <section class="engagement">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Engagement model</span>
         <h2>How we work together</h2>
       </div>
-      <blockquote>
-        “Engagements range from short, focused sparring through to longer advisory mandates — shaped to fit the question at hand, not the other way around.”
-        <footer>Selected references available on request.</footer>
-      </blockquote>
+      <div class="engagement-body">
+        <p>I have the ability to support on project management, process, decision-making and communication, combined with analysis and research. I am capable of engaging with stakeholders at all levels of a firm, covering the high-level questions but also willing and able to engage in the actual work.</p>
+        <p>My engagement model is honest, open, collaborative and down-to-earth, built on respect and understanding for both the individuals and the objectives. I collaborate through a pragmatic mix of digital and physical meetings, workshops and interviews, combined with my own work, to ensure an effective process — with the understanding that the process itself is an integral part of a successful outcome.</p>
+        <p class="note">Engagements range from short, focused sparring through to longer advisory mandates. References available on request.</p>
+      </div>
     </div>
   </section>
 
@@ -475,12 +424,25 @@
         <span class="eyebrow">Contact</span>
         <div class="contact-card">
           <h2>Let's talk</h2>
-          <p>The most direct way to reach me is by email. I'm happy to have an initial, no-obligation conversation about what you're working on.</p>
+          <p>Write me an email and I'm happy to set up an initial, no-obligation conversation about what you're working on.</p>
           <a class="contact-email" href="mailto:martin@hkinsight.dk">martin@hkinsight.dk</a>
           <p class="contact-loc">HK Insight · Copenhagen, Denmark<br>
             <a href="https://www.linkedin.com/company/hk-insight" target="_blank" rel="noopener">LinkedIn ↗</a>
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: ME -->
+  <section class="me">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Me</span>
+        <h2>Who am I</h2>
+      </div>
+      <div class="me-body">
+        <p>I'm Swedish, born in Stockholm, and now live in Copenhagen with my wife and our two teenage daughters. In my spare time, I enjoy being with family and friends, reading, cooking, running and spending time outdoors. I feel fortunate to genuinely enjoy my work, and draw a lot of energy from both the tasks at hand and the collaboration with others.</p>
       </div>
     </div>
   </section>
